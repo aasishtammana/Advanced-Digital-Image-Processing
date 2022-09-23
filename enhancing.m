@@ -1,0 +1,14 @@
+clc;
+clear;
+close all;
+a=imread('CAR.jpg');
+b=double(a)+50;
+c=double(a)-50;
+imshow(a);
+title('original image');
+figure;
+imshow(uint8(b));
+title('Enhanced image');
+figure;
+imshow(uint8(c));
+title('Brightness supressed image');
